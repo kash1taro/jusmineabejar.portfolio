@@ -163,5 +163,91 @@ body {
 }
 
 
+.top-buttons {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+}
 
+#darkModeButton,
+.login-button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border: 2px solid #4a4d44;
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #4a4d44;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#darkModeButton:hover,
+.login-button:hover {
+  background-color: #4a4d44;
+  color: #f2eddb;
+  transform: scale(1.1);
+}
+
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f2eddb;
+}
+
+body.dark-mode #darkModeButton,
+body.dark-mode .login-button {
+  border-color: #f2eddb;
+  color: #f2eddb;
+}
+
+body.dark-mode #darkModeButton:hover,
+body.dark-mode .login-button:hover {
+  background-color: #f2eddb;
+  color: #1e1e1e;
+}
+
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f2eddb;
+}
+
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode #intro,
+body.dark-mode .deets h1,
+body.dark-mode .deets p,
+body.dark-mode .about_me h2 {
+  color: #f2eddb !important;
+}
+
+
+body.dark-mode #profile_pic {
+  border-color: #f2eddb;
+}
+
+
+body.dark-mode .email a {
+  border-color: #f2eddb;
+  color: #f2eddb;
+}
+
+body.dark-mode .email a:hover {
+  background-color: #f2eddb;
+  color: #1e1e1e;
+}
+
+
+body.dark-mode .icons a {
+  color: #f2eddb;
+}
 
